@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bryan Andrés Martínez | Abogado Corporativo</title>
+    <meta name="description" content="Abogado Bryan Andrés Martínez. Servicios jurídicos empresariales, civiles y penales.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+            url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover;
+            color: white;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+        .icon-box i {
+            font-size: 2.5rem;
+            color: #0d6efd;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            font-size: 28px;
+            padding: 15px;
+            border-radius: 50%;
+            z-index: 999;
+            box-shadow: 0 4px 10px rgba(0,0,0,.3);
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">BAM Legal</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="modal" href="#terminosModal">Términos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+    <div class="container text-center" data-aos="fade-up">
+        <h1 class="display-4 fw-bold">Bryan Andrés Martínez</h1>
+        <p class="lead">Abogado Corporativo & Asesor Jurídico Estratégico</p>
+        <div class="mt-4">
+            <a href="#contacto" class="btn btn-primary btn-lg me-2">
+                <i class="fa-solid fa-scale-balanced"></i> Consulta Legal
+            </a>
+            <a href="https://wa.me/573104362698" target="_blank" class="btn btn-success btn-lg">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Servicios Profesionales</h2>
+            <p>Soluciones jurídicas empresariales y personales</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center icon-box">
+                        <i class="fa-solid fa-building-columns mb-3"></i>
+                        <h5>Derecho Corporativo</h5>
+                        <p>Asesoría legal empresarial, cumplimiento normativo y contratos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center icon-box">
+                        <i class="fa-solid fa-gavel mb-3"></i>
+                        <h5>Derecho Civil y Penal</h5>
+                        <p>Representación judicial, defensa técnica y procesos legales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center icon-box">
+                        <i class="fa-solid fa-file-contract mb-3"></i>
+                        <h5>Contratos</h5>
+                        <p>Redacción, análisis y negociación contractual profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8" data-aos="fade-up">
+                <h2 class="text-center fw-bold mb-4">Contacto Profesional</h2>
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" rows="5" placeholder="Describe tu caso" required></textarea>
+                    </div>
+                    <button class="btn btn-primary w-100 btn-lg">
+                        <i class="fa-solid fa-paper-plane"></i> Enviar Consulta
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+    <p class="mb-1">© 2025 Bryan Andrés Martínez - Abogado</p>
+    <small>Confidencialidad • Ética • Profesionalismo</small>
+</footer>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/573104362698" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- MODAL TERMINOS -->
+<div class="modal fade" id="terminosModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Términos y Condiciones</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    La información proporcionada en este sitio web tiene fines informativos
+                    y no constituye asesoría legal directa.
+                </p>
+                <p>
+                    El uso de este sitio implica la aceptación de confidencialidad,
+                    tratamiento de datos personales y responsabilidad limitada del servicio.
+                </p>
+                <p>
+                    Toda comunicación será tratada con estricta reserva profesional.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const name = nameInput = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        window.location.href = `mailto:bams92offi@gmail.com?subject=Consulta Legal - ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AContacto: ${email}`;
+    });
+</script>
+
+</body>
+</html>
